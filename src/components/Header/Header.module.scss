@@ -1,0 +1,21 @@
+.header {
+    background-color: #171718;
+    padding: 20px 0;
+    border-bottom: 0.5px solid #26292d;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 1200px;
+        width: 100%;
+
+        h2 {
+            color: #fff;
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+    }
+}

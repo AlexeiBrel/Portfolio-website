@@ -1,0 +1,39 @@
+.nav {
+    max-width: 300px;
+    width: 100%;
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            color: #fff;
+            transition: all 0.25s ease;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+        a::after {
+            content: "";
+            display: block;
+            right: 0;
+            position: absolute;
+            height: 2px;
+            width: 0;
+            background-color: rgb(80, 215, 53);
+            bottom: -5px;
+            transition: all 0.2s ease;
+        }
+
+        a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        a.active::after {
+            width: 100%;
+        }
+    }
+}
