@@ -6,7 +6,7 @@ const HomePage = () => {
         <>
             <section className={cl.hero}>
                 <div className={cl.container}>
-                    <h1 className={cl.title}>
+                    <h1>
                         <strong>Hi, my name is <em>Alexey</em></strong><br />
                         a frontend developer
                     </h1>

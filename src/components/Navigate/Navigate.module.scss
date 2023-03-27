@@ -7,7 +7,7 @@
         justify-content: space-between;
         align-items: center;
         a {
-            color: #fff;
+            color: var(--white);
             transition: all 0.25s ease;
             display: inline-block;
             width: 100%;
@@ -22,7 +22,7 @@
             position: absolute;
             height: 2px;
             width: 0;
-            background-color: rgb(80, 215, 53);
+            background-color: var(--green);
             bottom: -5px;
             transition: all 0.2s ease;
         }

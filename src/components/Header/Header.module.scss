@@ -1,7 +1,12 @@
 .header {
-    background-color: #171718;
+    background-color: var(--black);
     padding: 20px 0;
-    border-bottom: 0.5px solid #26292d;
+    border-bottom: 0.5px solid var(--black-border);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -11,8 +16,14 @@
         max-width: 1200px;
         width: 100%;
 
+        .picture {
+            img {
+                width: 50%;
+            }
+        }
+
         h2 {
-            color: #fff;
+            color: var(--white);
             font-size: 30px;
             letter-spacing: 1px;
             font-weight: 500;

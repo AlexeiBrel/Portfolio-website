@@ -1,16 +1,16 @@
 .hero {
-    min-height: calc(100vh - 77px);
-    background: url(/public/img/bg.png) center no-repeat, #171718;
+    min-height: 100vh;
+    background: url(/img/bg.png) center no-repeat, var(--black);
     display: flex;
     .container {
         margin: auto;
-        color: #fff;
+        color: var(--white);
         padding: 0 15px;
         max-width: 660px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .title {
+        h1 {
             margin-bottom: 20px;
             font-size: 40px;
             font-weight: 500;
@@ -18,7 +18,7 @@
             text-align: center;
             em {
                 font-style: normal;
-                color: rgb(82, 215, 55);
+                color: var(--green);
             }
         }
         p {
@@ -28,8 +28,8 @@
             display: inline-block;
             padding: 12px 28px;
             border-radius: 5px;
-            background: rgb(80, 215, 53);
-            color: #fff;
+            background: var(--green);
+            color: var(--white);
             letter-spacing: 0.7px;
             font-size: 16px;
             font-weight: 600;

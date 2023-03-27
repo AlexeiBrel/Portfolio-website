@@ -1,7 +1,6 @@
 .footer {
     padding: 60px 0 50px;
-    background-color: #171718;
-    color: #fff;
+    background-color: var(--black);
 
     .container {
         margin: 0 auto;
@@ -16,9 +15,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         a {
             font-size: 40px;
-            color: #fff;
+            color: var(--white);
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--green);
         }
     }
 }
