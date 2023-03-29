@@ -6,7 +6,7 @@
   --black: #171718;
   --black-border: #26292d;
   --white: #fff;
-  --green: #50d735;
+  --violet: #d735bf;
   --box-shadow: rgba(0, 0, 0, 0.24);
 }
 
@@ -22,7 +22,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  background: rgb(237, 237, 237);
+  background: var(--white);
 }
 
 a {

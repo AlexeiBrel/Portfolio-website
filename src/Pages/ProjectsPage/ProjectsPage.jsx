@@ -1,60 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import cl from './ProjectsPage.module.scss';
 
 const ProjectsPage = () => {
+    const nav = useNavigate();
+    const [projects, setProjects] = useState([
+        { id: 1, title: 'Aperture', picture: '/img/projects/01.png' },
+        { id: 2, title: 'Quiz', picture: '/img/projects/02.png' },
+    ])
+
     return (
         <>
             <section className={cl.container}>
                 <h1>Projects</h1>
                 <div className={cl.projects__wrapper}>
-                    <div className={cl.card}>
-                        <div className={cl.picture}>
-                            <img src='/img/projects/01.jpg' alt='picture' />
-                        </div>
-                        <div className={cl.body}>
-                            <h3>Gaming streaming portal</h3>
-                        </div>
-                    </div>
-                    <div className={cl.card}>
-                        <div className={cl.picture}>
-                            <img src='/img/projects/01.jpg' alt='picture' />
-                        </div>
-                        <div className={cl.body}>
-                            <h3>Gaming streaming portal</h3>
-                        </div>
-                    </div>
-                    <div className={cl.card}>
-                        <div className={cl.picture}>
-                            <img src='/img/projects/01.jpg' alt='picture' />
-                        </div>
-                        <div className={cl.body}>
-                            <h3>Gaming streaming portal</h3>
-                        </div>
-                    </div>
-                    <div className={cl.card}>
-                        <div className={cl.picture}>
-                            <img src='/img/projects/01.jpg' alt='picture' />
-                        </div>
-                        <div className={cl.body}>
-                            <h3>Gaming streaming portal</h3>
-                        </div>
-                    </div>
-                    <div className={cl.card}>
-                        <div className={cl.picture}>
-                            <img src='/img/projects/01.jpg' alt='picture' />
-                        </div>
-                        <div className={cl.body}>
-                            <h3>Gaming streaming portal</h3>
-                        </div>
-                    </div>
-                    <div className={cl.card}>
-                        <div className={cl.picture}>
-                            <img src='/img/projects/01.jpg' alt='picture' />
-                        </div>
-                        <div className={cl.body}>
-                            <h3>Gaming streaming portal</h3>
-                        </div>
-                    </div>
+                    {projects.map(item => <ProjectCard projects={item} key={item.id} />)}
                 </div>
             </section>
         </>

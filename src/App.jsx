@@ -14,6 +14,7 @@ function App() {
         <Route path='/projects' element={<ProjectsPage />} />
         <Route path='/contacts' element={<ContactsPage />} />
         <Route path='/projectdetails/:id' element={<ProjectDetailsPage />} />
+        <Route path='*' element={<div>Not found</div>} />
       </Route>
     </Routes>
   )
