@@ -11,7 +11,7 @@ const HomePage = () => {
                         a frontend developer
                     </h1>
                     <p> with passion for learning and creating. </p>
-                    <a href='/public/Resume.pdf' download className={cl.btn}>Download CV</a>
+                    <a href='/Resume.pdf' download className={cl.btn}>Download CV</a>
                 </div>
             </section>
             <section className={cl.technologies}>
