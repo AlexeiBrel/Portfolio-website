@@ -8,13 +8,14 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 0 10px;
         max-width: 1200px;
         width: 100%;
 
         .picture {
+            max-width: 200px;
             img {
-                width: 50%;
+                width: 80%;
             }
         }
 
@@ -23,6 +24,30 @@
             font-size: 30px;
             letter-spacing: 1px;
             font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .header {
+        .container {
+            .picture {
+                max-width: 170px;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header {
+        .container {
+            justify-content: center;
+            .picture {
+                display: none;
+            }
         }
     }
 }

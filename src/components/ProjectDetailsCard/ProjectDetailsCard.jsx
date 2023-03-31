@@ -8,7 +8,7 @@ const ProjectDetailsCard = (props) => {
             <h1>{props.project.title}</h1>
             <div className={cl.details}>
                 <div className={cl.picture}>
-                    <img src={props.project.picture} alt='picture' />
+                    <img src={window.innerWidth > 510 ? props.project.picture : props.project.pictureMobile} alt='picture' />
                 </div>
                 <div className={cl.desc}>
                     <p>Skills:</p>

@@ -1,5 +1,5 @@
 .container {
-    padding: 30px 15px;
+    padding: 30px 10px;
     margin: 0 auto;
     max-width: 1200px;
     h1 {
@@ -32,6 +32,35 @@
 
             a {
                 color: var(--black);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .container {
+        h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1;
+        }
+        .contact__list {
+            margin: auto;
+            height: 100%;
+            .cantact__item {
+                font-size: 18px;
+                line-height: 1.5;
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 1;
+                }
+
+                a {
+                    color: var(--black);
+                }
             }
         }
     }

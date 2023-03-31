@@ -12,7 +12,7 @@ const ContactsPage = () => {
                         <p>Minsk, Belarus</p>
                     </li>
                     <li className={cl.cantact__item}>
-                        <h2>Phone / Telegram</h2>
+                        <h2>Phone</h2>
                         <p><a href="tel:+375336803591">+375(33) 680-35-91</a></p>
                     </li>
                     <li className={cl.cantact__item}>

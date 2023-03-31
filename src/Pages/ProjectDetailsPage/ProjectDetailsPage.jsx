@@ -7,8 +7,8 @@ import cl from './ProjectDetailsPage.module.scss';
 const ProjectDetailsPage = () => {
     const { id } = useParams();
     const [project, setProject] = useState([
-        { id: 1, title: 'Aperture', picture: '/img/projects/02-2.png', technologies: 'HTML, CSS, JavaScript', gitlink: '#' },
-        { id: 2, title: 'Quiz', picture: '/img/projects/02-2.png', technologies: 'ReactJS, Node.js', gitlink: '#' },
+        { id: 1, title: 'Aperture', picture: '/img/projects/02-2.png', pictureMobile: '/img/projects/01.png', technologies: 'HTML, CSS, JavaScript', gitlink: '#' },
+        { id: 2, title: 'Quiz', picture: '/img/projects/02-2.png', pictureMobile: '/img/projects/02.png', technologies: 'ReactJS, Node.js', gitlink: '#' },
     ])
 
     return (

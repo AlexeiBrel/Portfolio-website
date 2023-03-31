@@ -1,5 +1,5 @@
 .container {
-    padding: 30px 15px;
+    padding: 30px 10px;
     margin: 0 auto;
     max-width: 1200px;
     h1 {
@@ -17,5 +17,16 @@
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .container {
+        h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1;
+        }
     }
 }
