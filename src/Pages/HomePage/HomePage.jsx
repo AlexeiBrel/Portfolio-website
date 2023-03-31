@@ -11,7 +11,7 @@ const HomePage = () => {
                         a frontend developer
                     </h1>
                     <p> with passion for learning and creating. </p>
-                    <button className={cl.btn}>Download CV</button>
+                    <a href='/public/Resume.pdf' download className={cl.btn}>Download CV</a>
                 </div>
             </section>
             <section className={cl.technologies}>
